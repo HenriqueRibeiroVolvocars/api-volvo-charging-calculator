@@ -123,4 +123,9 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOW_ALL_ORIGINS = True  # ou restrinja com CORS_ALLOWED_ORIGINS
+CORS_ALLOWED_ORIGINS = [
+    "https://api-volvo-homecharging-dweqdpaecqc5e6f9.centralus-01.azurewebsites.net",  # domínio do frontend
+    "http://api-volvo-homecharging-dweqdpaecqc5e6f9.centralus-01.azurewebsites.net:8000",  # para quando testar localmente com Vite
+]
+
+CORS_ALLOW_CREDENTIALS = True
