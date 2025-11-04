@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-$((e88fxezg#pqi!kz7zo3)^zqu*^pqi^**p6is$n-tdg65jp(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api-volvo-homecharging-dweqdpaecqc5e6f9.centralus-01.azurewebsites.net']
+ALLOWED_HOSTS = ['api-volvo-homecharging-dweqdpaecqc5e6f9.centralus-01.azurewebsites.net',
+                'api-volvo-homecharging-dweqdpaecqc5e6f9.centralus-01.azurewebsites.net',
+                '.azurewebsites.net',  # Permite qualquer subdomínio do Azure
+                'localhost',
+                '127.0.0.1',]
 
 
 # Application definition
